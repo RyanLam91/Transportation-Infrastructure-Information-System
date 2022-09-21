@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E4C407A2-8D74-4671-B1D7-14D3C16C372F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SeeteeByke.My.MyApplication</StartupObject>
+    <RootNamespace>SeeteeByke</RootNamespace>
+    <AssemblyName>SeeteeByke</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SeeteeByke.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SeeteeByke.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form_BillingInfo.Designer.vb">
+      <DependentUpon>Form_BillingInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_BillingInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ConfirmInfo.Designer.vb">
+      <DependentUpon>Form_ConfirmInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ConfirmInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Confirm_ReturnBike.Designer.vb">
+      <DependentUpon>Form_Confirm_ReturnBike.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Confirm_ReturnBike.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ExplainMoney.Designer.vb">
+      <DependentUpon>Form_ExplainMoney.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ExplainMoney.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_LogIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_LogIn.Designer.vb">
+      <DependentUpon>Form_LogIn.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_OrderSummary.Designer.vb">
+      <DependentUpon>Form_OrderSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_OrderSummary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_PersonInfo.Designer.vb">
+      <DependentUpon>Form_PersonInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_PersonInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_RegisterAcct.Designer.vb">
+      <DependentUpon>Form_RegisterAcct.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_RegisterAcct.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Reports.Designer.vb">
+      <DependentUpon>Form_Reports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Reports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ReturnBike.Designer.vb">
+      <DependentUpon>Form_ReturnBike.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ReturnBike.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SeeteeByke_DatabaseDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SeeteeByke_DatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form_BillingInfo.resx">
+      <DependentUpon>Form_BillingInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ConfirmInfo.resx">
+      <DependentUpon>Form_ConfirmInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Confirm_ReturnBike.resx">
+      <DependentUpon>Form_Confirm_ReturnBike.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ExplainMoney.resx">
+      <DependentUpon>Form_ExplainMoney.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_LogIn.resx">
+      <DependentUpon>Form_LogIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_OrderSummary.resx">
+      <DependentUpon>Form_OrderSummary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_PersonInfo.resx">
+      <DependentUpon>Form_PersonInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_RegisterAcct.resx">
+      <DependentUpon>Form_RegisterAcct.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Reports.resx">
+      <DependentUpon>Form_Reports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ReturnBike.resx">
+      <DependentUpon>Form_ReturnBike.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="SeeteeByke_DatabaseDataSet.xsc">
+      <DependentUpon>SeeteeByke_DatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SeeteeByke_DatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SeeteeByke_DatabaseDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SeeteeByke_DatabaseDataSet.xss">
+      <DependentUpon>SeeteeByke_DatabaseDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
